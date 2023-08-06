@@ -127,3 +127,29 @@
   text-overflow: ellipsis;
   word-break: break-all;
 }
+
+.main-screen a .friends-component:hover {
+  background-color: rgba(242, 93, 205, 0.5);
+}
+.phonenumber__box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.caution {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid red;
+  margin: 10px 0px 0px 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caution i {
+  color: red;
+  font-size: 10px;
+}
