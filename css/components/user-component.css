@@ -127,3 +127,7 @@
   text-overflow: ellipsis;
   word-break: break-all;
 }
+
+.main-screen a .friends-component:hover {
+  background-color: rgba(239, 78, 199, 0.5);
+}
