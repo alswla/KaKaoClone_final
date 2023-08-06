@@ -1,0 +1,8 @@
+:root {
+  --yellow: #fdd423;
+  --pink: #e779a9;
+  --blossom-pink: #e67f84;
+  --horizontal-space: 20px;
+  --border: 1px solid rgba(0, 0, 0, 0.2);
+  --grey: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,129 @@
+.myprofile {
+  padding: 10px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.channel-component {
+  justify-content: space-between;
+}
+
+.channel-component,
+.user-component__column:first-child,
+.friends-component__column:first-child,
+.channel-component__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.friends-component,
+.user-component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 70px;
+  margin: 10px 0;
+  padding: 10px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.friends-component__column:last-child,
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.friends-component__time {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.user-component__avatar--profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 25px;
+  margin-right: 27px;
+
+  background-image: url(../img/static3.png);
+  background-size: 110px 110px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.channel-component__avatar--channel {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+  margin-right: 27px;
+
+  background-image: url(../img/P5.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 친구프로필 사진 */
+.friends-component__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 25px;
+  margin-right: 27px;
+}
+
+.blossom {
+  background-image: url(../img/blossom.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bubbles {
+  background-image: url(../img/bubbles2.jpeg);
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.buttercup {
+  background-image: url(../img/buttercup2.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 텍스트부분(프로필명, 프로필텍스트, 대화shortcut)  */
+.chatbox {
+  width: 80%;
+}
+
+.friends-component__text {
+  width: 60%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.user-component__title,
+.friends-component__title {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.user-component__title--not-bold,
+.channel-component__title--not-bold {
+  font-weight: 400px;
+}
+
+.user-component__subtitle,
+.friends-component__subtitle {
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 13px;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}

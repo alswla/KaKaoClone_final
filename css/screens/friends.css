@@ -1,0 +1,87 @@
+.friendpage,
+.chatpage,
+.findpage,
+.morepage,
+.settingpage {
+  height: 100vh;
+  margin: 0 auto;
+
+  background-image: url(../img/P12.jpeg);
+  /* background-image: url(../img/P4.jpeg); */
+  /* background-image: url(../img/P13.jpeg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 46.5% -30px;
+
+  font-family: "Rowdies", cursive;
+}
+
+#friends-display-link {
+  display: block;
+  text-align: center;
+  background-color: #fafafa;
+  padding: 15px 0px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: -10px;
+}
+
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+  padding: 0px 5px 0px 10px;
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+  display: flex;
+  flex-direction: column;
+}
+
+.friends-screen__channel {
+  margin: 10px 0px;
+  border-top: var(--border);
+
+  padding-top: 15px;
+}
+.frinds-screen__channel-header {
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* 새로고침 화면 */
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--pink);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: hideSplashScreen 0.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.gif {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/powerpuff-girls_gif4.gif);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}

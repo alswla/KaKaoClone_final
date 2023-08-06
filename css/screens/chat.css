@@ -1,0 +1,238 @@
+#chatscreen {
+  height: 500vh;
+}
+.chatscreen_blossom {
+  background-color: #e67f84;
+}
+.chatscreen_bubble {
+  background-color: #7face2;
+}
+.chatscreen_buttercup {
+  background-color: #82c076;
+}
+
+#chatscreen .alt-header,
+#chatscreen .status-bar {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+}
+#chatscreen .status-bar {
+  z-index: 2;
+}
+
+#chatscreen .alt-header {
+  top: 10px;
+  z-index: 1;
+}
+
+.main-chat {
+  font-family: "Rowdies", cursive;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  color: white;
+  background-color: rgba(168, 156, 156, 0.3);
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+/* 친구 프로필사진 */
+.message-profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 13px;
+}
+
+.message-blossom {
+  background-image: url(../img/blossom.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.message-bubble {
+  background-image: url(../img/bubbles2.jpeg);
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.message-buttercup {
+  background-image: url(../img/buttercup2.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 친구 말풍선 */
+.message-row__content {
+  width: 80%;
+}
+
+.message__friendname {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.message__info {
+  display: flex;
+  align-items: end;
+  margin-right: 5px;
+}
+.message__text {
+  background-color: white;
+  padding: 13px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+}
+
+.message__time,
+.message__friendname {
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+/* user 말풍선 */
+.message-row__user {
+  justify-content: flex-end;
+}
+
+.message-row__user .message__text {
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 15px;
+  margin-left: 5px;
+  /* order: 1; */
+}
+
+.message-row__user .message__info {
+  flex-direction: row-reverse;
+}
+
+/* .message-row__user .message__time {
+  order: 0;
+} */
+
+.text__blossom {
+  background-color: #ffa5be;
+}
+.text__bubble {
+  background-color: #9ec8ea;
+}
+.text__buttercup {
+  background-color: #9cea9e;
+}
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.reply .reply__column:first-child {
+  width: 7%;
+}
+.reply .reply__column:last-child {
+  width: 93%;
+  position: relative;
+}
+
+.reply input {
+  height: 30px;
+  width: 100%;
+  border: var(--border);
+  border-radius: 20px;
+  padding: 0px 10px;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: -3px;
+  top: 2px;
+}
+.reply__column:last-child > i {
+  right: 35px;
+  top: 16px;
+}
+
+.reply__column button {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.button__blossom {
+  background-color: #ffa5be;
+}
+.button__bubble {
+  background-color: #7face2;
+}
+.button__buttercup {
+  background-color: #82c076;
+}
+
+.reply__column button:active,
+.reply__column button:focus {
+  outline: none;
+}
+
+.reply i {
+  opacity: 0.5;
+}
+.reply__column button i {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.message-row {
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+}
+
+.message-row:nth-child(2) {
+  animation-delay: 1.5s;
+}
+.message-row:nth-child(3) {
+  animation-delay: 2s;
+}
+.message-row:nth-child(4) {
+  animation-delay: 2.5s;
+}
+.message-row:nth-child(5) {
+  animation-delay: 3s;
+}
+.message-row:nth-child(6) {
+  animation-delay: 3.5s;
+}
+.message-row:nth-child(7) {
+  animation-delay: 4s;
+}

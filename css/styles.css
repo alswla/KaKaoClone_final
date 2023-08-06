@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+
+/* < Components > - 다른 components 요소들 아래에 추가 (구성요소들, 공통적인 것들 - 상단 상태바, 네비게이션바 등) */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+/* < Screens > -  다른 Screens 요소들 아래에 추가 (말 그대로 한 화면에 해당 - 로그인 화면, 채팅방 화면 등) */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+body {
+  /* font-family: "Open Sans", sans-serif; */
+  color: #2f363e;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+a {
+  cursor: pointer;
+}

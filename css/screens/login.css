@@ -1,0 +1,90 @@
+.loginpage {
+  height: 100vh;
+  background-image: url(../img/P1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  font-family: "Rowdies", cursive;
+}
+
+.login-text-tab {
+  margin: 90px 0px 50px 0px;
+}
+
+.login-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-header__title {
+  margin-bottom: 20px;
+  /* font-family: "Luckiest Guy", cursive; */
+  font-family: "Sigmar", cursive;
+  /* font-family: "Bagel Fat One", cursive; */
+  /* font-family: "Paytone One", sans-serif; */
+  /* color: #a990c1; */
+  color: #fefdc7;
+  text-shadow: 0px 5px #906cb5, 0px -2px #906cb5;
+  -webkit-text-stroke: 0.1px #906cb5;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.login-header__text {
+  font-size: 1em;
+  width: 70%;
+  opacity: 0.7;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+#login-form input {
+  padding: 15px 15px;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: "Rowdies", cursive;
+  font-weight: 300;
+}
+#login-form input:not([type="submit"]) {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+#login-form input::placeholder {
+  color: rgba(100, 96, 65, 0.4);
+}
+#login-form input:focus {
+  border-color: rgba(0, 0, 0, 0.35);
+}
+
+.submit-btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+#login-form input[type="submit"] {
+  font-size: 15px;
+  font-family: "Sigmar", cursive;
+  color: #fefdc7;
+  background-color: rgba(208, 141, 239, 0.7);
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+#login-form input[value="Log in"] {
+  margin-bottom: 10px;
+}
+#login-form input[type="submit"]:focus {
+  background-color: #a990c1;
+}
+
+/* <아이디찾기 링크 부분> */
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 15px;
+}
