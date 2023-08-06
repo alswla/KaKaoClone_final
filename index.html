@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Townsbill Talk!</title>
+  </head>
+  <body class="loginpage">
+    <header class="status-tab">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span>P mobile</span>
+          <i class="fa-solid fa-wifi" style="color: #000000"></i>
+        </div>
+        <div class="status-bar__column">
+          <span>18:45</span>
+        </div>
+        <div class="status-bar__column">
+          <span>11%</span>
+          <i class="fa-solid fa-battery-quarter fa-lg"></i>
+          <i class="fa-sharp fa-solid fa-bolt" style="color: #000000"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="login-text-tab">
+      <header class="login-header">
+        <h1 class="login-header__title">Welcome to <br />Townsville Talk</h1>
+        <p class="login-header__text">
+          If you have a Townsville Account, <br />log in with your email or
+          phone number.
+        </p>
+      </header>
+    </section>
+
+    <main class="login-form-tab">
+      <form action="friends.html" method="get" id="login-form">
+        <input
+          name="username"
+          required
+          type="text"
+          placeholder="Email or phone number"
+        />
+        <input name="Password" required type="text" placeholder="Password" />
+        <div class="submit-btn">
+          <input type="submit" value="Log in" />
+          <input type="submit" value="Sign up" />
+          <a href="#">Find Townsbill Account or Password</a>
+        </div>
+      </form>
+    </main>
+
+    <div id="no-mobile">
+      <div class="no-mobile__img">
+        <span>Your screen is too big!</span>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/3094465d0e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
