@@ -236,3 +236,6 @@
 .message-row:nth-child(7) {
   animation-delay: 4s;
 }
+.message-row:nth-child(8) {
+  animation-delay: 4.5s;
+}
